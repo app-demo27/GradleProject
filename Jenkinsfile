@@ -11,7 +11,6 @@ node{
           
    }
    stage('Results') {
-      //archiveArtifacts 'build/lib/*.jar'
         bat 'echo "Looks like it went well!"'
    }
 }
