@@ -1,7 +1,4 @@
 node{
-   options {
-    skipDefaultCheckout false
-  }
    stage('Build') {
       // Run the maven build
            bat 'gradle clean build'
