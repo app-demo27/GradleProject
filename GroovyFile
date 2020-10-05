@@ -1,4 +1,10 @@
 node {
+ stage('checkout') {
+      // checkout the code build
+           git checkout https://github.com/app-demo27/GradleProject.git
+
+   }
+
    stage('Build') {
       // Run the maven build
            bat 'gradle clean build'
